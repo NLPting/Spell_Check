@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Spell Check</title>
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/components-font-awesome/css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" type="text/css" href="./css/form.css">
+
+</head>
+
+<body>
+
+  <!-- As a link -->
+  <nav class="navbar navbar-light bg-light">
+    <a id="brand" class="navbar-brand" href="#">
+            <i class="fa fa-apple d-inline-block align-top"  style="font-size:30px"></i>
+            SpellCheck
+    </a>
+</nav>
+<div class="row align-items-start"></div>
+
+<div class="container-fluid">
+<div class="row align-items-start">
+  <div class="col-6">
+      <label for="exampleFormControlTextarea6">Shadow and placeholder</label>
+      <textarea id="mes" class="form-control" rows="8"></textarea>
+  </div>
+  <div class="col-6">
+      <label for="exampleFormControlTextarea6">Shadow and placeholder</label>
+      <div id="show-text" class="form-control" rows ="8"></div>
+  </div>
+</div>
+<div class="row align-items-start"></div>
+
+<div class="row align-items-start">
+  <div class="col-6">
+    <button type="button" class="btn btn-outline-primary btn-lg" id="send">Sent</button>
+  </div>
+</div> 
+<div class="row align-items-start"></div>
+
+<div class="row align-items-start">
+  <div class="col-6">
+    <h4>Result</h4>  
+  </div>
+</div>
+
+<div class="row align-items-start"></div>
+
+
+<div  class="row">
+  
+  <div class="col-md-3 col-sm-3 col-xs-3">
+    <h4 class="text-center">Error word</h4>  
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-3">
+    <h4 class="text-center">Aspell</h4>  
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-3">
+    <h4 class="text-center">RNN</h4>  
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-3">
+    <h4 class="text-center">Word2vec</h4>  
+  </div>
+  <div id='dd'></div>
+
+</div>
+
+<div class="row align-items-start"></div>
+<div class="row align-items-start"></div>
+
+<div  class="row">
+  
+    <div id="err" class="col-md-3 col-sm-3 col-xs-3 text-center">
+            
+
+    </div>
+    <div id="aspell" class="col-md-3 col-sm-3 col-xs-3 text-center">
+            
+    </div>
+    <div id = "rnn" class="col-md-3 col-sm-3 col-xs-3 text-center">
+            
+    </div>
+    <div id = "w2v"class="col-md-3 col-sm-3 col-xs-3 text-center">
+            
+    </div>s
+
+</div>
+
+
+</div>
+
+
+  <script src="./javascript/button.js"></script>
+  
+
+
+
+
+</body>
+
+</html>
