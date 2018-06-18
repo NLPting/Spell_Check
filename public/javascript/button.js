@@ -34,7 +34,7 @@ function find_aspell(errors){
         strr += er+' : '+errors[i].candidates.slice(0,5).join(' , ') + '</br>'
         //console.log(strr)
     }
-    document.getElementById("aspell").innerHTML =strr
+    document.getElementById("enchant").innerHTML =strr
 }
 
 function find_seq2seq(errors){
